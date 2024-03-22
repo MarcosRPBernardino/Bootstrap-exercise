@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gentium Plus", sans-serif;
+}
+
+body{
+    background-color: #f5cf844d;
+}
+
+header{
+    background-color: #84B1F5;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 6em;
+}
+
+.nav-link{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: #8CF584;
+    border: none;
+    color: #f70b98;
+}
+
+.carousel-inner {
+    height: 33em;
+}
+
+section{
+    height: 100vh;
+    padding-top: 10em;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 30vw;
+    height: 60vh; 
+    overflow: hidden;
+    margin-top: 2em;
+    background-color: #f5cf8405
+}
+
+.card-img-top {
+    width: 100%; 
+    height: 50%; 
+    object-fit: cover;
+    transition: all 1.5s ease;
+}
+
+.card:hover{
+    cursor: pointer;
+    border: solid 2px #5B7559;
+}
+
+.card-img-top:hover{
+    transform: scale(1.2);
+}
+
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg p-0">
+            <div class="container p-0">
+                <h1>MB-Tour</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#destino">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#perguntas">Perguntas Frequentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div id="carousel-btn" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item h-100 active"
+                style="background: url(img/rio-de-janeiro.jpg) center/cover no-repeat">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item h-100"
+                style="background: url(img/sao-paulo-ponte-estaiada.jpg) center/cover no-repeat">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item h-100"
+                style="background: url(img/florence-duomo.jpg) center/cover no-repeat">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item h-100"
+                style="background: url(img/dublin-temple.jpg) center/cover no-repeat">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item h-100"
+                style="background: url(img/japan-pagoda-fuji.jpg) center/cover no-repeat">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item h-100"
+                style="background: url(img/netherlands-amsterdam-canal.jpg) center/cover no-repeat">
+            </div>
+        </div>
+        <button data-bs-target="#carousel-btn" data-bs-slide="prev" type="button" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-btn" data-bs-slide="next" type="button" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button data-bs-target="carousel-btn" data-bs-slide-to="0" class="active" type="button"></button>
+            <button data-bs-target="carousel-btn" data-bs-slide-to="1" type="button"></button>
+            <button data-bs-target="carousel-btn" data-bs-slide-to="2" type="button"></button>
+            <button data-bs-target="carousel-btn" data-bs-slide-to="3" type="button"></button>
+            <button data-bs-target="carousel-btn" data-bs-slide-to="4" type="button"></button>
+            <button data-bs-target="carousel-btn" data-bs-slide-to="5" type="button"></button>
+        </div>
+    </div>
+    <div class="container p-0">
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="destino">
+                <h2>Destinos</h2>
+                <div class="row">
+                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                        <div class=" card">
+                            <img class="card-img-top" src="img/rio-cristo-back.jpeg" alt="Rio de Janeiro">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Rio de Janeiro</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
+                                    consequatur explicabo reiciendis ducimus</p>
+                                <a href="#" class="btn btn-success">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="img/florence-skyline.jpg" alt="Florença">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Florença</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
+                                    consequatur explicabo reiciendis ducimus</p>
+                                <a href="#" class="btn btn-success">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img class="card-img-top" src="img/netherlands-windmill.jpg" alt="Amsterdã">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Amsterdã</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
+                                    consequatur explicabo reiciendis ducimus</p>
+                                <a href="#" class="btn btn-success">Ver mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            </section>
+        <section id="promocoes">
+            <h2>Promoções</h2>
+        </section>
+        <section id="sobre">
+            <h2>Sobre</h2>
+        </section>
+        <section id="perguntas">
+            <h2>Perguntas Frequentes</h2>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+        </section>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
