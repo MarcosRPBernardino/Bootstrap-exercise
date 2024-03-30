@@ -13,18 +13,20 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
-    <header id="cabecalho">
-        <div class="navbar navbar-expand-lg p-0">
+<body data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <header>
+        <nav class="navbar navbar-expand-lg p-0" id="cabecalho">
             <div class="container p-0">
-                <h1>MB-Tour</h1>
+                <a class="navbar-brand" href="#">
+                    <h1>MBTour</h1>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#destino">Destinos</a>
+                            <a class="nav-link active" aria-current="page" href="#destino">Destinos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#promocoes">Promoções</a>
@@ -39,10 +41,10 @@
                             <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
-        </div>
+            </div>
+        </nav>
     </header>
     <div id="carousel-btn" class="carousel carousel-fade slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -81,60 +83,168 @@
         </div>
     </div>
     <div class="container p-0">
-        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
-            <section id="destino">
-                <h2>Destinos</h2>
-                <div class="row">
-                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
-                        <div class=" card">
-                            <img class="card-img-top" src="img/rio-cristo-back.jpeg" alt="Rio de Janeiro">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">Rio de Janeiro</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
-                                    consequatur explicabo reiciendis ducimus</p>
-                                <a href="#" class="btn btn-success">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
-                        <div class="card">
-                            <img class="card-img-top" src="img/florence-skyline.jpg" alt="Florença">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">Florença</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
-                                    consequatur explicabo reiciendis ducimus</p>
-                                <a href="#" class="btn btn-success">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-container col-lg-4 col-md-6 col-sm-12">
-                        <div class="card">
-                            <img class="card-img-top" src="img/netherlands-windmill.jpg" alt="Amsterdã">
-                            <div class="card-body text-center">
-                                <h4 class="card-title">Amsterdã</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
-                                    consequatur explicabo reiciendis ducimus</p>
-                                <a href="#" class="btn btn-success">Ver mais</a>
-                            </div>
+        <section id="destino">
+            <h2>Destinos</h2>
+            <div class="row">
+                <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                    <div class=" card">
+                        <img class="card-img-top" src="img/rio-cristo-back.jpeg" alt="Rio de Janeiro">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Rio de Janeiro</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
+                                consequatur explicabo reiciendis ducimus</p>
+                            <a href="#" class="btn btn-success">Ver mais</a>
                         </div>
                     </div>
                 </div>
-        </div>
-            </section>
+                <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img/florence-skyline.jpg" alt="Florença">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Florença</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
+                                consequatur explicabo reiciendis ducimus</p>
+                            <a href="#" class="btn btn-success">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img/netherlands-windmill.jpg" alt="Amsterdã">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Amsterdã</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
+                                consequatur explicabo reiciendis ducimus</p>
+                            <a href="#" class="btn btn-success">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="promocoes">
             <h2>Promoções</h2>
+            <div class="row">
+                <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                    <div class=" card">
+                        <img class="card-img-top" src="img/sao-paulo-ponte-estaiada.jpg" alt="São Paulo">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">São Paulo</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
+                                consequatur explicabo reiciendis ducimus</p>
+                            <a href="#" class="btn btn-success">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img/dublin-harp-bridge.jpg" alt="Dublin">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Dublin</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
+                                consequatur explicabo reiciendis ducimus</p>
+                            <a href="#" class="btn btn-success">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img/japan-tokyo.jpg" alt="Tokyo">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Tokyo</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure,
+                                consequatur explicabo reiciendis ducimus</p>
+                            <a href="#" class="btn btn-success">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="sobre">
             <h2>Sobre</h2>
+<div class="container-sobre">
+    <picture>
+        <img src="img/bussola-tour.jpg" alt="bussola">
+    </picture>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corporis fugiat itaque aut, odit ratione ducimus ea, provident reprehenderit blanditiis nihil natus dolor incidunt ipsam minima magnam amet, laborum quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officiis quo ratione, atque iste alias illo nemo architecto. Assumenda repellat nostrum in velit accusamus sint cumque reprehenderit qui illo voluptates. Lorem ipsum, dolor sit amet consectetur adipisicing elit. A libero iure, incidunt eaque perspiciatis dignissimos qui minus magnam pariatur sint similique accusamus. Assumenda rem eum qui hic consectetur omnis minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
         </section>
         <section id="perguntas">
             <h2>Perguntas Frequentes</h2>
+            <div class="accordion" id="acordeao">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta1" aria-expanded="true" aria-controls="pergunta1">Pergunta 1</button>
+                    </div>
+                    <div id="pergunta1" class="accordion-collapse collapse show" data-bs-parent="#acordeao">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quis quod eos perferendis quam? Nisi, incidunt. Consequatur reiciendis ut odio est nesciunt odit blanditiis magni eum aspernatur cupiditate! Laudantium, molestiae!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta2" aria-expanded="false" aria-controls="pergunta2">Pergunta 2</button>
+                    </div>
+                    <div id="pergunta2" class="accordion-collapse collapse" data-bs-parent="#acordeao">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quis quod eos perferendis quam? Nisi, incidunt. Consequatur reiciendis ut odio est nesciunt odit blanditiis magni eum aspernatur cupiditate! Laudantium, molestiae!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta3" aria-expanded="false" aria-controls="pergunta3">Pergunta 3</button>
+                    </div>
+                    <div id="pergunta3" class="accordion-collapse collapse" data-bs-parent="#acordeao">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quis quod eos perferendis quam? Nisi, incidunt. Consequatur reiciendis ut odio est nesciunt odit blanditiis magni eum aspernatur cupiditate! Laudantium, molestiae!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta4" aria-expanded="false" aria-controls="pergunta4">Pergunta 4</button>
+                    </div>
+                    <div id="pergunta4" class="accordion-collapse collapse" data-bs-parent="#acordeao">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quis quod eos perferendis quam? Nisi, incidunt. Consequatur reiciendis ut odio est nesciunt odit blanditiis magni eum aspernatur cupiditate! Laudantium, molestiae!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta5" aria-expanded="false" aria-controls="pergunta5">Pergunta 5</button>
+                    </div>
+                    <div id="pergunta5" class="accordion-collapse collapse" data-bs-parent="#acordeao">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quis quod eos perferendis quam? Nisi, incidunt. Consequatur reiciendis ut odio est nesciunt odit blanditiis magni eum aspernatur cupiditate! Laudantium, molestiae!
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contato">
             <h2>Contato</h2>
+            <form>
+                <label class="form-label" for="nome">NOME COMPLETO</label>
+                <input class="form-control" type="text" id="nome" placeholder="NOME COMPLETO">
+                <label class="form-label" for="email">E-MAIL</label>
+                <input class="form-control" type="email" id="email" placeholder="E-MAIL">
+                <label class="form-label" for="mensagem">MENSAGEM</label>
+                <textarea class="form-control" id="mensagem"></textarea>
+                <div class="form-check form-switch">
+                    <label class="form-check-label" for="termos">Li e Aceito os termos</label>
+                    <input class="form-check-input" type="checkbox" id="termos">
+                </div>
+                <button class="btn btn-primary" type="button">Enviar</button>
+            </form>
         </section>
-        </div>
     </div>
+    <footer>
+        <div class="container">
+        <p>&copy; 2024 - MBTour - Todos os direitos reservados</p>
+    </div>
+    </footer>
 
     <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
